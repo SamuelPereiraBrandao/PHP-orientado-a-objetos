@@ -3,13 +3,25 @@
 class Login {
     private $email;
     private $senha;
+    private $nome;
+
+    public function __construct($email, $senha, $nome){
+        $this->nome = $nome;
+        $this->setEmail($email);
+        $this->setSenha($senha);
+    }
+
+    public function getNome(){
+        return $this->nome;
+    }
 
     public function getEmail(){
         return $this->email; 
     }
 
     public function setEmail($e){
-        $this->email = $e;
+        $email = filter_var($e, FILTER_SANITIZE_EMAIL);
+        $this->email = $email;
     }
 
     public function getSenha(){
@@ -31,8 +43,9 @@ class Login {
     
 }
 
-$logar = new Login();
-$logar->email = 'teste@gmail.com';
-$logar->senha = '123456';
-
+$logar = new Login("teste@gmail.com","123456","Samuel Pereira");
 $logar->Logar();
+echo $logar->getEmail();
+echo $logar->getNome();
+echo "<br>";
+
