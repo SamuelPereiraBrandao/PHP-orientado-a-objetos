@@ -19,6 +19,5 @@ $Cachorro = new Cachorro();
 $Cachorro->nome = "Zeus";
 $Cachorro->idade = 3;
 $Cachorro->raça = 'PitMonster';
-
-
 $Cachorro->Comer();
+
