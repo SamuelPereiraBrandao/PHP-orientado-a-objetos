@@ -8,10 +8,10 @@ class Cachorro {
 
 
     public function Comer() {
-        echo $this->nome." estava com fome e comeu toda a ração!";
+        echo "AÇÃO COMER(): ".$this->nome." estava com fome e comeu toda a ração!";
     }
     public function Informacoes(){
-        echo $this->nome.", ".$this->idade.", ".$this->raça;
+        echo "INFORMAÇÕES: ".$this->nome.", ".$this->idade." anos, Raça: ".$this->raça;
     }
 }
 
@@ -21,15 +21,7 @@ $Cachorro->idade = 3;
 $Cachorro->raça = 'PitMonster';
 
 
-
-
-
-
-
-
-
-
-
-
 $Cachorro->Comer();
+echo"<br>";
+$Cachorro->Informacoes();
 
