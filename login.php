@@ -45,7 +45,11 @@ class Login {
 
 $logar = new Login("teste@gmail.com","123456","Samuel Pereira");
 $logar->Logar();
-echo $logar->getEmail();
-echo $logar->getNome();
 echo "<br>";
+echo $logar->getEmail();
+echo "<br>";
+echo $logar->getSenha();
+echo "<br>";
+echo $logar->getNome();
+
 
