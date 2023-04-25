@@ -7,11 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-<form method="get" action="login.php">
-  <label>Email:</label>
-  <input type="text" name="email"><br><br>
-  <label>Senha:</label>
-  <input type="password" name="senha"><br><br>
+<form method="get" action="heranca.php">
+  <label>Nome:</label>
+  <input type="text" name="nome"><br><br>
+  <label>Idade:</label>
+  <input type="text" name="idade"><br><br>
+  <label>Altura:</label>
+  <input type="text" name="altura"><br><br>
+  <label>Altura Pequena:</label>
+  <input type="text" name="alturapequena"><br><br>
+
   <input type="submit" value="Entrar">
 </form>
 
