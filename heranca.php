@@ -1,7 +1,7 @@
 <?php
 
 class Veiculo {
-    public $modelo;
+    protected $modelo;
     public $cor;
     public $ano;
 
@@ -13,6 +13,13 @@ class Veiculo {
         echo "Parou!";
     }
 
+    public function setModelo($m){
+        $this->modelo = $m;
+    }
+
+    public function getModelo(){
+        return $this->modelo;
+    }
 }
 
 class Carro extends Veiculo {
@@ -29,7 +36,7 @@ class Moto extends Veiculo {
 
 echo"Carro: <br>";
 $carro = new Carro();
-$carro -> modelo = 'Gol';
+$carro -> setModelo("HILUX");
 $carro -> cor = 'Verde';
 $carro -> ano = '2023';
 $carro -> ligarLimpador();
@@ -39,7 +46,7 @@ echo "O carro ".$carro->Andar()."";
 echo "<br>";
 echo"<hr>Moto: <br>";
 $moto = new Moto();
-$moto -> modelo = "Honda Biz";
+$moto -> setModelo("BIZ");
 $moto -> cor = 'Vermelho';
 $moto -> ano = '2023';
 $moto->Parar();

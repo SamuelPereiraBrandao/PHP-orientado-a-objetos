@@ -24,4 +24,3 @@ $Cachorro->raça = 'PitMonster';
 $Cachorro->Comer();
 echo"<br>";
 $Cachorro->Informacoes();
-
