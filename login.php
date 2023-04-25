@@ -34,7 +34,7 @@ class Login {
 
     public function Logar(){
         if($this->email == "teste@gmail.com" and $this->senha == '123456'){
-            echo"Logado com sucesso!";
+            echo"Logado com sucesso! ";
         }else {
             echo "Login incorreto! ";
         }
@@ -42,8 +42,9 @@ class Login {
 
     
 }
-
-$logar = new Login("teste@gmail.com","123456","Samuel Pereira");
+$senhaa = isset($_GET['senha']) ? $_GET['senha'] : '';
+$emaill = isset($_GET['email']) ? $_GET['email'] : '';
+$logar = new Login("$emaill","$senhaa","Samuel Pereira");
 $logar->Logar();
 echo "<br>";
 echo $logar->getEmail();
