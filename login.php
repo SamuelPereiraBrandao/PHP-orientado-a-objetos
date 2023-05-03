@@ -5,6 +5,8 @@ class Login {
     private $senha;
     private $nome;
 
+
+    
     public function __construct($email, $senha, $nome){
         $this->nome = $nome;
         $this->setEmail($email);
