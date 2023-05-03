@@ -1,25 +1,30 @@
 <?php
 abstract class Banco {
-    protected $saldo/
+    protected $saldo;
     protected $limiteSaque;
     protected $juros;
 
-    public function Sacar() {
-
-    }
-    public function Depositar(){
-
-    }
+    abstract protected function Sacar();
+    abstract protected  function Depositar();
 
 }
 
 class Itau extends Banco {
-
+        public function Sacar(){
+            echo"sacou";
+        }
+        public function Depositar(){
+            echo "depositou";
+        }
 }
 
 class Bradesco extends Banco {
-
+    public function Sacar(){
+        echo"sacou";
+    }
+    public function Depositar(){
+        echo "depositou";
+    }
 }
 
-$Itau = new Itau();
-$Bradesco = new Bradesco();
+$itau = new Itau();
