@@ -13,6 +13,5 @@ echo $resultado2;
 
 echo"<br>";
 
-
 $resultado3 = $obj->meuMetodoATT();
 echo $resultado3;
